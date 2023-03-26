@@ -1,0 +1,1 @@
+# FolioMan - in-progress, not ready for any 'cloning'

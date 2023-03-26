@@ -1,0 +1,8 @@
+dotnet add package Microsoft.IdentityModel.Tokens --version 6.21.0
+dotnet add package System.IdentityModel.Tokens.Jwt --version 6.21.0
+dotnet add package Newtonsoft.Json --version 13.0.1
+dotnet add package Azure.Storage.Blobs --version 12.13.0
+dotnet add package Azure.Identity --version 1.6.0
+dotnet add package Azure.Security.KeyVault.Secrets --version 4.3.0
+dotnet add package PdfSharp --version 1.50.5147
+pause

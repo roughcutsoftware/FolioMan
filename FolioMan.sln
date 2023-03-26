@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolioMan.NetCore.WebAPI", "ServerAPIs\ASPNetCore\src\FolioMan.NetCore.WebAPI\FolioMan.NetCore.WebAPI.csproj", "{B1DFE16E-6315-4415-B59D-294861A1E623}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolioMan.NetCore.WebAPI.Tests", "ServerAPIs\ASPNetCore\tests\FolioMan.NetCore.WebAPI.Tests\FolioMan.NetCore.WebAPI.Tests.csproj", "{B48E44AD-DC86-489E-8412-60C74000A3AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1DFE16E-6315-4415-B59D-294861A1E623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DFE16E-6315-4415-B59D-294861A1E623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DFE16E-6315-4415-B59D-294861A1E623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DFE16E-6315-4415-B59D-294861A1E623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48E44AD-DC86-489E-8412-60C74000A3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48E44AD-DC86-489E-8412-60C74000A3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48E44AD-DC86-489E-8412-60C74000A3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48E44AD-DC86-489E-8412-60C74000A3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79C7889A-9F16-4E9E-88CA-2D7C10B8E1D5}
+	EndGlobalSection
+EndGlobal

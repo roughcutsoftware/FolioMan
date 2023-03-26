@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e93a62da-c581-4316-9551-9b6e858f902f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\WorkHistory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="TestingData\0100-bogus-testdata.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TestingData\0100-bogus-testdata.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.21.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Roughcut.Community.Core" Version="1.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Models\CandidateModel.cs">
+      <LastGenOutput>CandidateModel.cs.d.ts</LastGenOutput>
+      <Generator>DtsGenerator</Generator>
+    </Compile>
+    <Compile Update="Models\EmployerModel.cs">
+      <Generator>DtsGenerator</Generator>
+      <LastGenOutput>EmployerModel.cs.d.ts</LastGenOutput>
+    </Compile>
+    <Compile Update="Models\PortfolioModel.cs">
+      <Generator>DtsGenerator</Generator>
+      <LastGenOutput>PortfolioModel.cs.d.ts</LastGenOutput>
+    </Compile>
+    <Compile Update="Models\WorkHighlightModel.cs">
+      <Generator>DtsGenerator</Generator>
+      <LastGenOutput>WorkHighlightModel.cs.d.ts</LastGenOutput>
+    </Compile>
+    <Compile Update="Models\WorkHistoryModel.cs">
+      <Generator>DtsGenerator</Generator>
+      <LastGenOutput>WorkHistoryModel.cs.d.ts</LastGenOutput>
+    </Compile>
+    <Compile Update="WeatherForecast.cs">
+      <Generator>DtsGenerator</Generator>
+      <LastGenOutput>WeatherForecast.cs.d.ts</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Models\CandidateModel.cs.d.ts">
+      <DependentUpon>CandidateModel.cs</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </None>
+    <None Update="Models\EmployerModel.cs.d.ts">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EmployerModel.cs</DependentUpon>
+    </None>
+    <None Update="Models\PortfolioModel.cs.d.ts">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PortfolioModel.cs</DependentUpon>
+    </None>
+    <None Update="Models\WorkHighlightModel.cs.d.ts">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WorkHighlightModel.cs</DependentUpon>
+    </None>
+    <None Update="Models\WorkHistoryModel.cs.d.ts">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WorkHistoryModel.cs</DependentUpon>
+    </None>
+    <None Update="WeatherForecast.cs.d.ts">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WeatherForecast.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>
